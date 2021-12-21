@@ -1003,17 +1003,9 @@ select {
   margin-top: 0.75rem;
   margin-bottom: 0.75rem;
 }
-.my-40 {
-  margin-top: 10rem;
-  margin-bottom: 10rem;
-}
 .my-5 {
   margin-top: 1.25rem;
   margin-bottom: 1.25rem;
-}
-.my-10 {
-  margin-top: 2.5rem;
-  margin-bottom: 2.5rem;
 }
 .ml-3 {
   margin-left: 0.75rem;
@@ -1096,23 +1088,17 @@ select {
 .mt-11 {
   margin-top: 2.75rem;
 }
-.mt-40 {
-  margin-top: 10rem;
+.mt-28 {
+  margin-top: 7rem;
+}
+.mb-10 {
+  margin-bottom: 2.5rem;
 }
 .mb-3 {
   margin-bottom: 0.75rem;
 }
 .-mt-px {
   margin-top: -1px;
-}
-.mt-20 {
-  margin-top: 5rem;
-}
-.mb-10 {
-  margin-bottom: 2.5rem;
-}
-.mt-28 {
-  margin-top: 7rem;
 }
 .block {
   display: block;
@@ -1161,9 +1147,6 @@ select {
 }
 .h-20 {
   height: 5rem;
-}
-.h-28 {
-  height: 7rem;
 }
 .h-36 {
   height: 9rem;
@@ -1679,10 +1662,6 @@ select {
 .text-xl {
   font-size: 1.25rem;
   line-height: 1.75rem;
-}
-.text-5xl {
-  font-size: 3rem;
-  line-height: 1;
 }
 .text-3xl {
   font-size: 1.875rem;
@@ -2292,11 +2271,6 @@ select {
 
   .md\:col-span-1 {
     grid-column: span 1 / span 1;
-  }
-
-  .md\:my-5 {
-    margin-top: 1.25rem;
-    margin-bottom: 1.25rem;
   }
 
   .md\:my-10 {

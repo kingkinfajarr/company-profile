@@ -1573,6 +1573,10 @@ select {
   padding-left: 1.25rem;
   padding-right: 1.25rem;
 }
+.py-24 {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
 .pt-6 {
   padding-top: 1.5rem;
 }
@@ -1767,6 +1771,10 @@ select {
 .text-gray-300 {
   --tw-text-opacity: 1;
   color: rgb(209 213 219 / var(--tw-text-opacity));
+}
+.text-sky-500 {
+  --tw-text-opacity: 1;
+  color: rgb(14 165 233 / var(--tw-text-opacity));
 }
 .underline {
   -webkit-text-decoration-line: underline;

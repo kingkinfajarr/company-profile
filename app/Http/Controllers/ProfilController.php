@@ -5,7 +5,6 @@ namespace App\Http\Controllers;
 use App\Http\Requests\StoreProfilRequest;
 use App\Http\Requests\UpdateProfilRequest;
 use App\Models\Profil;
-use App\Models\Hero;
 
 class ProfilController extends Controller
 {
@@ -22,16 +21,6 @@ class ProfilController extends Controller
         ]);
     }
 
-    // public function indexFrontProfil()
-    // {
-    //     $profil = Profil::all();
-    //     $hero = Hero::all();
-    //     return view('welcome', [
-    //         'profil' => $profil,
-    //         'hero' => $hero
-    //     ]);
-    // }
-
     /**
      * Show the form for creating a new resource.
      *
@@ -39,7 +28,7 @@ class ProfilController extends Controller
      */
     public function create()
     {
-        return view('profil.create');
+        // return view('profil.create');
     }
 
     /**
@@ -50,13 +39,7 @@ class ProfilController extends Controller
      */
     public function store(StoreProfilRequest $request)
     {
-        $profil = new Profil;
-        $profil->sejarah = $request->sejarah;
-        $profil->visi_misi = $request->visi_misi;
-        $profil->profil = $request->profil;
-        $profil->save();
-
-        return redirect()->route('profil.index');
+        //
     }
 
     /**
@@ -108,8 +91,6 @@ class ProfilController extends Controller
      */
     public function destroy(Profil $profil)
     {
-        $profil->delete();
-
-        return redirect()->route('profil.index');
+        //
     }
 }

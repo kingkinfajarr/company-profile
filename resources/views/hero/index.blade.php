@@ -9,12 +9,11 @@
       <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
           <div class="bg-white overflow-hidden shadow-xl sm:rounded-lg p-5">
               <div class="p-5">
-                  <a href="{{ route('hero.create') }}" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Create Hero</a>
                   <table class="table-auto w-full mt-5">
                       <tr>
                           <th class="border px-4 py-2" width="30%">Title</th>
-                          <th class="border px-4 py-2" width="45%">Description</th>
-                          <th class="border px-4 py-2" width="25%">Aksi</th>
+                          <th class="border px-4 py-2" width="60%">Description</th>
+                          <th class="border px-4 py-2" width="10%">Aksi</th>
                         </tr>
                         @forelse ($hero as $item)
                           <tr>
@@ -22,11 +21,6 @@
                               <td class="border px-4 py-2">{{ $item->description }}</td>
                               <td class="border px-4 py-2 justify-between">
                                   <a href="{{ route('hero.edit', $item->id) }}" class="py-1 px-4 rounded-md bg-yellow-400">Edit</a>
-                                  <form action="{{ route('hero.destroy', $item->id) }}" method="POST" class="inline-block">
-                                  @csrf
-                                  @method('delete')
-                                  <button type="submit" class="py-1 px-2 rounded-md bg-red-500">Hapus</button>
-                                  </form>
                               </td>
                           </tr>
                         @empty

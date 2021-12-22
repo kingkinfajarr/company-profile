@@ -21,14 +21,6 @@ class HeroController extends Controller
         ]);
     }
 
-    // public function indexFrontHero()
-    // {
-    //     $hero = Hero::all();
-    //     return view('welcome', [
-    //         'hero' => $hero
-    //     ]);
-    // }
-
     /**
      * Show the form for creating a new resource.
      *
@@ -36,7 +28,7 @@ class HeroController extends Controller
      */
     public function create()
     {
-        return view('hero.create');
+        //
     }
 
     /**
@@ -47,12 +39,7 @@ class HeroController extends Controller
      */
     public function store(StoreHeroRequest $request)
     {
-        $hero = new Hero;
-        $hero->title = $request->title;
-        $hero->description = $request->description;
-        $hero->save();
-
-        return redirect()->route('hero.index');
+        //
     }
 
     /**
@@ -103,8 +90,6 @@ class HeroController extends Controller
      */
     public function destroy(Hero $hero)
     {
-        $hero->delete();
-
-        return redirect()->route('hero.index');
+        //
     }
 }
